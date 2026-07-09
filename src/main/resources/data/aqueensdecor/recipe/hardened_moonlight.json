@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": [
+      "minecraft:quartz"
+    ],
+    "B": [
+      "minecraft:iron_ingot"
+    ],
+    "C": [
+      "minecraft:netherite_ingot"
+    ]
+  },
+  "result": {
+    "id": "aqueensdecor:hardened_moonlight"
+  }
+}

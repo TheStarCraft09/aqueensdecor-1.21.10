@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "aqueensdecor:item/celestial_bronze_battleaxe"
+  }
+}

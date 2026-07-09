@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "aqueensdecor:block_of_bronze",
+    "aqueensdecor:bronze_ore",
+    "aqueensdecor:deepslate_bronze_ore"
+  ]
+}

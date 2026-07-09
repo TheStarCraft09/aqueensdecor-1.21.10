@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "aqueensdecor:block/deepslate_bronze_ore"
+  }
+}

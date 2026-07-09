@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": [
+    "minecraft:netherite_ingot"
+  ],
+  "base": [
+    "aqueensdecore:diamond_battleaxd"
+  ],
+  "template": [
+    "minecraft:netherite_upgrade_smithing_template"
+  ],
+  "result": {
+    "id": "aqueensdecor:netherite_battleaxe",
+    "count": 1
+  }
+}

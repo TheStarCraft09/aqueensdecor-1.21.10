@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "aqueensdecor:block_of_bronze"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "aqueensdecor:blocks/block_of_bronze"
+}

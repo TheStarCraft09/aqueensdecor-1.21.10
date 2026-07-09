@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "aqueensdecor:raw_stygian_iron",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "aqueensdecor:styx_blessing",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.20
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ancient_debris"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:blocks/ancient_debris"
+}

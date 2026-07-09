@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#aqueensdecor:pickaxes",
+    "#aqueensdecor:shovels",
+    "#aqueensdecor:hoes",
+    "#aqueensdecor:axes"
+  ]
+}

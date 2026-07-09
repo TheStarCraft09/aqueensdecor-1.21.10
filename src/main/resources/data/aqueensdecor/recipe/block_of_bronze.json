@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": [
+      "aqueensdecor:bronze_ingot"
+    ]
+  },
+  "result": {
+    "id": "aqueensdecor:block_of_bronze"
+  }
+}

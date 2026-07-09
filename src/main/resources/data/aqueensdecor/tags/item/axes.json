@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "aqueensdecor:bronze_axe",
+    "aqueensdecor:stygian_iron_axe",
+    "aqueensdecor:celestial_bronze_axe",
+    "aqueensdecor:imperial_gold_axe",
+    "aqueensdecor:hardened_moonlight_axe"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "ingredient": "#aqueensdecor:bronze",
+  "result": {
+    "id": "aqueensdecor:bronze_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 100
+}

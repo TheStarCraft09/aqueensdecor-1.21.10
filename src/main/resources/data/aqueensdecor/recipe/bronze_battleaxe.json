@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": [
+      "minecraft:stick"
+    ],
+    "X": [
+      "aqueensdecor:bronze_ingot"
+    ]
+  },
+  "pattern": [
+    "X#X",
+    "X#X",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "aqueensdecor:bronze_battleaxe"
+  }
+}
