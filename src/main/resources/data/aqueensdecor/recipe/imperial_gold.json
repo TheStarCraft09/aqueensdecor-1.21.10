@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:gold_ingot"
+  ],
+  "addition": [
+    "minecraft:nether_star"
+  ],
+  "template": [
+    "minecraft:netherite_upgrade_smithing_template"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aqueensdecor:imperial_gold"
+  }
+}

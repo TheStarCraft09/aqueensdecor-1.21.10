@@ -1,0 +1,8 @@
+{
+  "type": "fabric:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "aqueensdecor:bronze_ore"
+  ],
+  "step": "underground_ores"
+}

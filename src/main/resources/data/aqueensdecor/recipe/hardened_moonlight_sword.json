@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "A",
-    "A",
-    "B"
+    "X",
+    "X",
+    "Y"
   ],
   "key": {
-    "A": [
+    "X": [
       "aqueensdecor:hardened_moonlight"
     ],
-    "B": [
+    "Y": [
       "minecraft:stick"
     ]
   },

@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ABA",
-    "BCB",
-    "ABA"
+    "XYX",
+    "YZY",
+    "XYX"
   ],
   "key": {
-    "A": [
+    "X": [
       "minecraft:quartz"
     ],
-    "B": [
+    "Y": [
       "minecraft:iron_ingot"
     ],
-    "C": [
+    "Z": [
       "minecraft:netherite_ingot"
     ]
   },

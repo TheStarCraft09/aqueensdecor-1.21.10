@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "category": "building",
   "ingredients": [
     [
       "aqueensdecor:block_of_bronze"
     ]
   ],
   "result": {
-    "count": 9,
-    "id": "aqueensdecor:bronze_ingot"
+    "id": "aqueensdecor:bronze_ingot",
+    "count": 9
   }
 }

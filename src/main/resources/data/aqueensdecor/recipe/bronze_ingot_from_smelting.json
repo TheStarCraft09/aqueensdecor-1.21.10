@@ -1,11 +1,12 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
-  "cookingtime": 100,
-  "experience": 0.7,
-  "group": "bronze_ingot",
-  "ingredient": "#aqueensdecor:bronze",
+  "category": "blocks",
+  "ingredient": [
+    "aqueensdecor:raw_bronze"
+  ],
   "result": {
     "id": "aqueensdecor:bronze_ingot"
-  }
+  },
+  "experience": 0.7,
+  "cookingtime": 200
 }

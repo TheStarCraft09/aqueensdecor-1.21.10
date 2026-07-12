@@ -6,6 +6,7 @@
   "item.aqueensdecor.imperial_gold": "Imperial Gold",
   "item.aqueensdecor.celestial_bronze": "Celestial Bronze",
   "item.aqueensdecor.hardened_moonlight": "Hardened Moonlight",
+  "item.aqueensdecor.hardened_moonlight_rod": "Hardened Moonlight Rod",
   "item.aqueensdecor.bronze_sword": "Bronze Sword",
   "item.aqueensdecor.bronze_pickaxe": "Bronze Pickaxe",
   "item.aqueensdecor.bronze_axe": "Bronze Axe",
@@ -14,7 +15,6 @@
   "item.aqueensdecor.bronze_battleaxe": "Bronze Battleaxe",
   "item.aqueensdecor.stone_battleaxe": "Stone Battleaxe",
   "item.aqueensdecor.iron_battleaxe": "Iron Battleaxe",
-  "item.aqueensdecor.gold_battleaxe": "Golden Battleaxe",
   "item.aqueensdecor.diamond_battleaxe": "Diamond Battleaxe",
   "item.aqueensdecor.netherite_battleaxe": "Netherite Battleaxe",
   "item.aqueensdecor.stygian_iron_sword": "Stygian Iron Sword",
@@ -30,15 +30,13 @@
   "item.aqueensdecor.hardened_moonlight_axe": "Hardened Moonlight Axe",
   "item.aqueensdecor.hardened_moonlight_bow": "Hardened Moonlight Bow",
 
-  "block.aqueensdecor.block_of_bronze": "Block of Bronze",
-  "block.aqueensdecor.bronze_ore": "Bronze Ore",
-  "block.aqueensdecor.deepslate_bronze_ore": "Deepslate Bronze Ore",
+  "item.aqueensdecor.bronze_ore": "Bronze Ore",
+  "item.aqueensdecor.deepslate_bronze_ore": "Deepslate Bronze Ore",
 
-  "enchantment.aqueensdecor.lightning_striker": "Lightning Striker",
-  "enchantment.aqueensdecor.styx_blessing": "Styx Blessing",
+  "enchantment.aqueensdecor.styx_blessing": "Styx's Blessing",
 
-  "itemGroup.aqueensdecor.items": "A Queens Decor - Items",
+  "itemGroups.aqueensdecor_items": "A Queens Decor - Items",
   "itemGroups.aqueensdecor_combat": "A Queens Decor - Combat",
-  "itemGroup.aqueensdecor.tools": "A Queens Decor - Tools",
-  "itemGroup.aqueensdecor.blocks": "A Queens Decor - Blocks"
+  "itemGroups.aqueensdecor_blocks": "A Queens Decor - Blocks",
+  "itemGroups.aqueensdecor_tools": "A Queens Decor - Tools"
 }

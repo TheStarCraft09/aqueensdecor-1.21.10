@@ -1,13 +1,12 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
-  "cookingtime": 100,
-  "experience": 0.7,
-  "group": "stygian_iron",
+  "category": "blocks",
   "ingredient": [
     "aqueensdecor:raw_stygian_iron"
   ],
   "result": {
     "id": "aqueensdecor:stygian_iron_ingot"
-  }
+  },
+  "experience": 1.0,
+  "cookingtime": 200
 }

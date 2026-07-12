@@ -25,6 +25,7 @@ public class ModItems {
         public static final Item IMPERIAL_GOLD = register("imperial_gold", Item::new, new Item.Properties());
         public static final Item CELESTIAL_BRONZE = register("celestial_bronze", Item::new, new Item.Properties());
         public static final Item HARDENED_MOONLIGHT = register("hardened_moonlight", Item::new, new Item.Properties());
+        public static final Item HARDENED_MOONLIGHT_ROD = register("hardened_moonlight_rod", Item::new, new Item.Properties());
 
         // Advanced Items:
         // Modded Tools and Weapons:

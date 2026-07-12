@@ -1,21 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "building",
+  "pattern": [
+    "XXX",
+    "XYX",
+    " Y"
+  ],
   "key": {
-    "#": [
-      "minecraft:stick"
-    ],
     "X": [
       "minecraft:iron_ingot"
+    ],
+    "Y": [
+      "minecraft:stick"
     ]
   },
-  "pattern": [
-    "X#X",
-    "X#X",
-    " # "
-  ],
   "result": {
-    "count": 1,
     "id": "aqueensdecor:iron_battleaxe"
   }
 }

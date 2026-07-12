@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "aqueensdecor:block/deepslate_bronze_ore"
-    }
+    "": { "model": "aqueensdecor:block/deepslate_bronze_ore" }
   }
 }

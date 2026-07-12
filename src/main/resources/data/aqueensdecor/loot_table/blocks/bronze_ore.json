@@ -2,7 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -15,12 +15,7 @@
                   "predicate": {
                     "predicates": {
                       "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
+                        { "enchantments": "minecraft:silk_touch", "levels": { "min": 1 } }
                       ]
                     }
                   }
@@ -30,23 +25,18 @@
             },
             {
               "type": "minecraft:item",
+              "name": "aqueensdecor:raw_bronze",
               "functions": [
                 {
+                  "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
+                  "formula": "minecraft:ore_drops"
                 }
-              ],
-              "name": "aqueensdecor:raw_bronze"
+              ]
             }
           ]
         }
-      ],
-      "rolls": 1
+      ]
     }
-  ],
-  "random_sequence": "aqueensdecor:blocks/bronze_ore"
+  ]
 }

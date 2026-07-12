@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "aqueensdecor:block/block_of_bronze"
-  }
-}

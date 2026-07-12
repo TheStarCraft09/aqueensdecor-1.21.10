@@ -1,21 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "key": {
-    "#": [
-      "minecraft:stick"
-    ],
-    "X": [
-      "aqueensdecor:bronze_ingot"
-    ]
-  },
+  "category": "building",
   "pattern": [
     "XX",
-    "X#",
-    " #"
+    "XY",
+    " Y"
   ],
+  "key": {
+    "X": [
+      "aqueensdecor:bronze_ingot"
+    ],
+    "Y": [
+      "minecraft:stick"
+    ]
+  },
   "result": {
-    "count": 1,
     "id": "aqueensdecor:bronze_axe"
   }
 }

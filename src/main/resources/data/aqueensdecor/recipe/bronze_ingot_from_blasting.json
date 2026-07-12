@@ -1,7 +1,9 @@
 {
   "type": "minecraft:blasting",
   "category": "blocks",
-  "ingredient": "#aqueensdecor:bronze",
+  "ingredient": [
+    "aqueensdecor:raw_bronze"
+  ],
   "result": {
     "id": "aqueensdecor:bronze_ingot"
   },

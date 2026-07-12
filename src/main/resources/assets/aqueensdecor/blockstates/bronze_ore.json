@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "aqueensdecor:block/bronze_ore"
-    }
+    "": { "model": "aqueensdecor:block/bronze_ore" }
   }
 }

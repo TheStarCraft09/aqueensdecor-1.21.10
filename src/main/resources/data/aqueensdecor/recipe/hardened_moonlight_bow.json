@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " XZ",
+    "X Z",
+    " XZ"
+  ],
+  "key": {
+    "X": [
+      "aqueensdecor:hardened_moonlight_rod"
+    ],
+    "Z": [
+      "minecraft:string"
+    ]
+  },
+  "result": {
+    "id": "aqueensdecor:hardened_moonlight_bow"
+  }
+}
