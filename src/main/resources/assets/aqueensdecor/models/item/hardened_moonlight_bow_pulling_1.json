@@ -1,0 +1,6 @@
+{
+  "parent": "aqueensdecor:item/hardened_moonlight_bow",
+  "textures": {
+    "layer0": "aqueensdecor:item/hardened_moonlight_bow_pulling_1"
+  }
+}
