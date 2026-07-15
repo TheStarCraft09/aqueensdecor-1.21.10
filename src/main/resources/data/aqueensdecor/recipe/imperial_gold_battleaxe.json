@@ -8,13 +8,13 @@
   ],
   "key": {
     "X": [
-      "minecraft:iron_ingot"
+      "aqueensdecor:imperial_gold"
     ],
     "Y": [
       "minecraft:stick"
     ]
   },
   "result": {
-    "id": "aqueensdecor:iron_battleaxe"
+    "id": "aqueensdecor:imperial_gold_battleaxe"
   }
 }

@@ -2,19 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "XXX",
-    "XYX",
-    " Y "
+    "XX",
+    "XY",
+    " Y"
   ],
   "key": {
     "X": [
-      "minecraft:iron_ingot"
+      "aqueensdecor:celestial_bronze"
     ],
     "Y": [
       "minecraft:stick"
     ]
   },
   "result": {
-    "id": "aqueensdecor:iron_battleaxe"
+    "id": "aqueensdecor:celestial_bronze_axe"
   }
 }

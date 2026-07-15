@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "equipment",
   "pattern": [
-    "XXX",
-    "XYX",
-    " Y "
+    "X",
+    "X",
+    "Y"
   ],
   "key": {
     "X": [
-      "minecraft:iron_ingot"
+      "aqueensdecor:imperial_gold"
     ],
     "Y": [
       "minecraft:stick"
     ]
   },
   "result": {
-    "id": "aqueensdecor:iron_battleaxe"
+    "id": "aqueensdecor:imperial_gold_sword"
   }
 }
