@@ -47,6 +47,7 @@ public class ModItems {
         public static final Item HARDENED_MOONLIGHT_SWORD = register("hardened_moonlight_sword", Item::new, new Item.Properties().sword(ModToolMaterials.HARDENED_MOONLIGHT_TOOL_MATERIAL, 6.0F, -2.0F));
         public static final Item HARDENED_MOONLIGHT_AXE = register("hardened_moonlight_axe", Item::new, new Item.Properties().axe(ModToolMaterials.HARDENED_MOONLIGHT_TOOL_MATERIAL, 8.0F, -3.0F));
         public static final Item HARDENED_MOONLIGHT_BOW = register("hardened_moonlight_bow", BowItem::new, (new Item.Properties().durability(3096).enchantable(1)));
+        public static final Item SOUL_FLINT_AND_STEEL = register("soul_flint_and_steel", SoulFlintAndSteelItem::new, new Item.Properties().durability(7));
 
         // Vanilla Modded Items:
         public static final Item STONE_BATTLEAXE = register("stone_battleaxe", props -> new BattleaxeItem(ToolMaterial.STONE, 4.0F, battleaxeAttackSpeed, props), new Item.Properties());

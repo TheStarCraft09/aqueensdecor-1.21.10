@@ -8,6 +8,7 @@ import dev.lumareth.aqueensdecor.Item.ModToolMaterials;
 import dev.lumareth.aqueensdecor.Tags.ModBlockTags;
 import dev.lumareth.aqueensdecor.Tags.ModItemTags;
 import dev.lumareth.aqueensdecor.world.ModConfiguredFeatures;
+import dev.lumareth.aqueensdecor.world.ModDimensions;
 import dev.lumareth.aqueensdecor.world.ModOrePlacement;
 import dev.lumareth.aqueensdecor.world.ModPlacedFeatures;
 import dev.lumareth.aqueensdecor.world.gen.ModOreGeneration;
@@ -42,6 +43,7 @@ public class AQueensDecor implements ModInitializer {
 		ModOreGeneration.initialize();
 		ModPlacedFeatures.initialize();
 		ModEnchantments.initialize();
+		ModDimensions.initialize();
 		LOGGER.info(MOD_ID + " is loaded");
 	}
 

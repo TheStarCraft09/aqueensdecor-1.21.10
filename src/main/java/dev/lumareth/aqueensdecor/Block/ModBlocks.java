@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Function;
 
@@ -33,6 +34,17 @@ public class ModBlocks {
                     .sound(SoundType.DEEPSLATE)
                     .requiresCorrectToolForDrops()
                     .strength(4.5F, 3.0F)
+    );
+
+    public static final Block UNDERWORLD_PORTAL = registerBlock("underworld_portal",
+            UnderworldPortalBlock::new,
+            BlockBehaviour.Properties.of()
+                    .noCollision()
+                    .randomTicks()
+                    .strength(-1.0F)
+                    .sound(SoundType.GLASS)
+                    .lightLevel(blockStatex -> 11)
+                    .pushReaction(PushReaction.BLOCK)
     );
 
     // Initializer:

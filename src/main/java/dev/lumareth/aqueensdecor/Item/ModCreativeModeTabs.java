@@ -50,6 +50,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CELESTIAL_BRONZE_AXE);
                         output.accept(ModItems.IMPERIAL_GOLD_AXE);
                         output.accept(ModItems.HARDENED_MOONLIGHT_AXE);
+                        output.accept(ModItems.SOUL_FLINT_AND_STEEL);
                     }
             ).build());
     public static final CreativeModeTab A_QUEENS_DECOR_ITEMS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
