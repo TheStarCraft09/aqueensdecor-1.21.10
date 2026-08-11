@@ -11,7 +11,9 @@
 		"BowItemMixin",
 		"PlayerAttackMixin",
 		"HoeItemMixin",
-		"ShovelItemMixin"
+		"ShovelItemMixin",
+		"ServerPlayerMixin",
+		"PlayerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,0 +1,12 @@
+{
+  "description": {  "translate": "enchantment.aqueensdecor.runic_totem"},
+  "supported_items": "#aqueensdecor:enchantable/runic",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": { "base": 25, "per_level_above_first": 0 },
+  "max_cost": { "base": 65, "per_level_above_first": 0 },
+  "anvil_cost": 4,
+  "slots": ["mainhand", "offhand", "armor"],
+  "effects": {},
+  "exclusive_set": "#aqueensdecor:exclusive_set/runic"
+}

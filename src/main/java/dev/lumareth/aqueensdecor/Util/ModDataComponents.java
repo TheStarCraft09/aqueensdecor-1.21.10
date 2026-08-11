@@ -9,6 +9,7 @@ import net.minecraft.util.Unit;
 
 public class ModDataComponents {
     public static final DataComponentType<Unit> RUNIC_DEPLETED = Registry.register(BuiltInRegistries.DATA_COMPONENT_TYPE, ResourceLocation.fromNamespaceAndPath(AQueensDecor.MOD_ID, "runic_depleted"), DataComponentType.<Unit>builder().persistent(Unit.CODEC).build());
+    public static final DataComponentType<Unit> RUNIC_TOTEM = Registry.register(BuiltInRegistries.DATA_COMPONENT_TYPE, ResourceLocation.fromNamespaceAndPath(AQueensDecor.MOD_ID, "runic_totem"), DataComponentType.<Unit>builder().persistent(Unit.CODEC).build());
 
     public static void initialize() {
         AQueensDecor.LOGGER.info(AQueensDecor.MOD_ID + ": Registering data components");
