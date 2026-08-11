@@ -29,6 +29,7 @@ public class ModItems {
 
         // Advanced Items:
         // Modded Tools and Weapons:
+        public static final Item SILVERSONG = register("silversong_sword", Item::new, new Item.Properties().sword(ModToolMaterials.HARDENED_MOONLIGHT_TOOL_MATERIAL, 6.0F, -2.0F));
         public static final Item BRONZE_SWORD = register("bronze_sword", Item::new, new Item.Properties().sword(ModToolMaterials.BRONZE_TOOL_MATERIAL, 3.0F, -2.1F));
         public static final Item BRONZE_AXE = register("bronze_axe", Item::new, new Item.Properties().axe(ModToolMaterials.BRONZE_TOOL_MATERIAL, 5.5F, -3.0F));
         public static final Item BRONZE_PICKAXE = register("bronze_pickaxe", Item::new, new Item.Properties().pickaxe(ModToolMaterials.BRONZE_TOOL_MATERIAL, 1.2F, -3.0F));

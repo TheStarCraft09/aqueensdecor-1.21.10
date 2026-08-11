@@ -35,6 +35,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.HARDENED_MOONLIGHT_SWORD);
                         output.accept(ModItems.HARDENED_MOONLIGHT_AXE);
                         output.accept(ModItems.HARDENED_MOONLIGHT_BOW);
+                        output.accept(ModItems.SILVERSONG);
                     }
             ).build());
     public static final CreativeModeTab A_QUEENS_DECOR_TOOLS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
