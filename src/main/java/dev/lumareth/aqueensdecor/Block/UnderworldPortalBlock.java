@@ -21,6 +21,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Portal;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -45,6 +46,7 @@ public class UnderworldPortalBlock extends Block implements Portal {
     public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.HORIZONTAL_AXIS;
     public static final MapCodec<UnderworldPortalBlock> CODEC = simpleCodec(UnderworldPortalBlock::new);
     private static final Map<Direction.Axis, VoxelShape> SHAPES = Shapes.rotateHorizontalAxis(Block.column(4.0, 16.0, 0.0, 16.0));
+    private static final BlockPos PLATTFORM_CENTER = new BlockPos(0, 49, 0);
 
     @Override
     public MapCodec<UnderworldPortalBlock> codec() {
@@ -87,37 +89,24 @@ public class UnderworldPortalBlock extends Block implements Portal {
         WorldBorder worldBorder = serverLevel2.getWorldBorder();
         double d = DimensionType.getTeleportationScale(serverLevel.dimensionType(), serverLevel2.dimensionType());
         BlockPos blockPos2 = worldBorder.clampToBounds(entity.getX() * d, entity.getY(), entity.getZ() * d);
-        return this.getExitPortal(serverLevel2, entity, blockPos, blockPos2, bl, worldBorder);
+        return this.getExitPlatform(serverLevel2);
     }
 
     @Nullable
-    private TeleportTransition getExitPortal(ServerLevel serverLevel, Entity entity, BlockPos blockPos, BlockPos blockPos2, boolean bl, WorldBorder worldBorder){
-        Optional<BlockPos> optional = serverLevel.getPortalForcer().findClosestPortalPosition(blockPos2, bl, worldBorder);
-        BlockUtil.FoundRectangle foundRectangle;
-        TeleportTransition.PostTeleportTransition postTeleportTransition;
-        if(optional.isPresent()) {
-            BlockPos blockPos3 = optional.get();
-            BlockState blockState = serverLevel.getBlockState(blockPos3);
-            foundRectangle = BlockUtil.getLargestRectangleAround(
-                    blockPos3,
-                    blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS),
-                    21,
-                    Direction.Axis.Y,
-                    21,
-                    blockPosx -> serverLevel.getBlockState(blockPosx) == blockState
-            );
-            postTeleportTransition = TeleportTransition.PLAY_PORTAL_SOUND.then(entityx -> entityx.placePortalTicket(blockPos3));
-        } else {
-            Direction.Axis axis = entity.level().getBlockState(blockPos).getOptionalValue(AXIS).orElse(Direction.Axis.X);
-            Optional<BlockUtil.FoundRectangle> optional2 = serverLevel.getPortalForcer().createPortal(blockPos2, axis);
-            if (optional2.isEmpty()) {
-                AQueensDecor.LOGGER.error(AQueensDecor.MOD_ID + ": Unable to create a portal, likely target out of worldborder");
-                return null;
-            }
-            foundRectangle = optional2.get();
-            postTeleportTransition = TeleportTransition.PLAY_PORTAL_SOUND.then(TeleportTransition.PLACE_PORTAL_TICKET);
-        }
-        return getDimensionTransitionFromExit(entity, blockPos, foundRectangle, serverLevel, postTeleportTransition);
+    private TeleportTransition getExitPlatform(ServerLevel serverLevel){
+        createObsidianPlattform(serverLevel, PLATTFORM_CENTER);
+        Vec3 exitPos = new Vec3(PLATTFORM_CENTER.getX() + 0.5, PLATTFORM_CENTER.getY() + 1, PLATTFORM_CENTER.getZ() + 0.5);
+        return new TeleportTransition(serverLevel, exitPos, Vec3.ZERO, 0, 0.0F, Relative.union(Relative.DELTA, Relative.ROTATION), TeleportTransition.DO_NOTHING);
+    }
+
+    private static void createObsidianPlattform(ServerLevel serverLevel, BlockPos blockPos){
+        BlockPos base = blockPos.below();
+        BlockPos.betweenClosedStream(base.offset(-2, 0, -2), base.offset(2, 0, 2)).forEach(pos -> {
+            serverLevel.setBlockAndUpdate(pos, Blocks.OBSIDIAN.defaultBlockState());
+        });
+        BlockPos.betweenClosedStream(base.offset(-2, 0, -2), base.offset(2, 2, 2)).forEach(pos ->{
+            serverLevel.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
+        });
     }
 
     private static TeleportTransition getDimensionTransitionFromExit(

@@ -26,6 +26,8 @@ public class ModItems {
         public static final Item CELESTIAL_BRONZE = register("celestial_bronze", Item::new, new Item.Properties());
         public static final Item HARDENED_MOONLIGHT = register("hardened_moonlight", Item::new, new Item.Properties());
         public static final Item HARDENED_MOONLIGHT_ROD = register("hardened_moonlight_rod", Item::new, new Item.Properties());
+        public static final Item UNITY_FRAGMENT = register("unity_fragment", Item::new, new Item.Properties());
+        public static final Item DISORDER_FRAGMENT = register("disorder_fragment", Item::new, new Item.Properties());
 
         // Advanced Items:
         // Modded Tools and Weapons:

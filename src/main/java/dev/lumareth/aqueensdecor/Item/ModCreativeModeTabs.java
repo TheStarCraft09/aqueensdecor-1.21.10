@@ -67,6 +67,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CELESTIAL_BRONZE);
                         output.accept(ModItems.HARDENED_MOONLIGHT);
                         output.accept(ModItems.HARDENED_MOONLIGHT_ROD);
+                        output.accept(ModItems.UNITY_FRAGMENT);
+                        output.accept(ModItems.DISORDER_FRAGMENT);
                     }
             ).build());
     public static final CreativeModeTab A_QUEENS_DECOR_BLOCKS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,

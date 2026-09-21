@@ -1,6 +1,26 @@
 {
   "values": [
     "#aqueensdecor:tools",
-    "aqueensdecor:hardened_moonlight_bow"
+    "aqueensdecor:hardened_moonlight_bow",
+    "#minecraft:swords",
+    "#minecraft:axes",
+    "#minecraft:pickaxes",
+    "#minecraft:shovels",
+    "#minecraft:hoes",
+    "#minecraft:enchantable/armor",
+    "minecraft:elytra",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident",
+    "minecraft:shield",
+    "minecraft:mace",
+    "minecraft:flint_and_steel",
+    "minecraft:carrot_on_a_stick",
+    "minecraft:warped_fungus_on_a_stick",
+    "minecraft:fishing_rod",
+    "minecraft:spyglass",
+    "minecraft:shears",
+    "minecraft:recovery_compass",
+    "minecraft:compass"
   ]
 }

@@ -13,7 +13,9 @@
 		"HoeItemMixin",
 		"ShovelItemMixin",
 		"ServerPlayerMixin",
-		"PlayerMixin"
+		"PlayerMixin",
+		"SoulFlintAndSteelItemMixin",
+		"FlintAndSteelItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
